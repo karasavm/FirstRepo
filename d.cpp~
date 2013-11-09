@@ -1,0 +1,21 @@
+#include <iostream>
+class A {
+  int i;
+public:
+  virtual void sum();
+};
+void A::sum(void)
+{
+  std::cout << "OLa kala";
+};
+
+class B:public A{
+}
+
+int main(){
+
+	A a;
+
+	a.sum();
+	return 0;
+}
